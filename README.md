@@ -5,25 +5,20 @@ This repository provides scripts to automate the preparation of cloud-init confi
 ---
 
 ## Prerequisites
-- Linux (Debian/Ubuntu) for preparing cloud-init ISO images
-- Windows with VirtualBox installed for running VMs
+- Debian/Ubuntu for preparing cloud-init ISO images
 - Internet access to download required packages and VM images
 
 ---
 
-## Step 1: Prepare Cloud-Init Disk Config (Linux)
+## Prepare Cloud-Init Disk Config
 Use the provided script to generate cloud-init ISO images for master and worker nodes.
 
 ```bash
 ./cloud-init-k3s.sh
 ```
-## Step 2: Download/install VirtualBox, HELM, Kubernetes CLI, VM image (Windows/Linux)
-```
-install-tools.bat
-install-tools.sh
+## Download/install VirtualBox, HELM, Kubernetes CLI, VM image
+```bash
+./install-tools.sh
 ```
 
-## Step 3: Create VMs by VBoxManage (Windows)
-```
-run-vm.bat
-```
+## Create VMs by VBoxManage
